@@ -64,6 +64,56 @@
 <!-- ════════════════════════════════════ MAIN PANEL ═════════════════════════ -->
 <main class="main-panel" id="mainPanel">
 
+  <!-- ── HOW TO USE BANNER ── -->
+  <div class="how-to-banner">
+    <button class="how-to-toggle" id="howToToggle" aria-expanded="false" aria-controls="howToBody">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      How to Use This Game &amp; Earn Extra Credit
+      <svg class="how-to-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+    </button>
+    <div class="how-to-body hidden" id="howToBody">
+      <div class="how-to-grid">
+        <div class="how-to-step">
+          <span class="how-to-num">1</span>
+          <div>
+            <strong>Flashcards</strong>
+            <p>Start here to learn the terms. Click any card to flip it and reveal the definition. Use the arrow buttons to move forward and back. Filter by category or shuffle the deck to mix things up. Mark cards as "Known" to track your progress.</p>
+          </div>
+        </div>
+        <div class="how-to-step">
+          <span class="how-to-num">2</span>
+          <div>
+            <strong>Match</strong>
+            <p>Test your memory. Click a term on the left, then click its matching definition on the right. Clear all 8 pairs before the timer runs out. This mode does not count toward your extra credit score — it is just for practice.</p>
+          </div>
+        </div>
+        <div class="how-to-step">
+          <span class="how-to-num">3</span>
+          <div>
+            <strong>Quiz ★ Counts for Extra Credit</strong>
+            <p>Answer 20 multiple-choice questions. You will see instant feedback after each answer, including an explanation. When you finish, you will see your score. You can retake it as many times as you like — only your best score is saved. Score 90% or higher to earn the full 15 points.</p>
+          </div>
+        </div>
+        <div class="how-to-step">
+          <span class="how-to-num">4</span>
+          <div>
+            <strong>Scenario ★ Counts for Extra Credit</strong>
+            <p>Read 12 real-world fact patterns and apply the law to choose the correct answer — the same style as your question bank. You can retake as many times as you like. Score 90% or higher to earn the full 10 points.</p>
+          </div>
+        </div>
+        <div class="how-to-step how-to-step-ec">
+          <span class="how-to-num ec-star">★</span>
+          <div>
+            <strong>Extra Credit Tab — Up to 25 Points</strong>
+            <p>After completing both the Quiz and Scenario, click the <strong>Extra Credit</strong> tab. Your Score Report will show your results, calculate your points (Quiz up to 15 + Scenario up to 10), and generate a <strong>Verification Code</strong>. Copy that code and paste it into the Canvas Extra Credit assignment text box to submit. You can also print the report as a PDF to upload as a second file.</p>
+          </div>
+        </div>
+      </div>
+      <p class="how-to-tip">Tip: You do not need to complete the modes in order, but studying with Flashcards first will give you the best chance at a high score on the Quiz and Scenario.</p>
+    </div>
+  </div>
+
+
   <!-- ── FLASHCARDS ── -->
   <section id="flashcardsMode" class="game-section active" aria-labelledby="fcHeading">
     <div class="section-header">

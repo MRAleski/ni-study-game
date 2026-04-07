@@ -35,6 +35,28 @@ function qsa(sel, ctx = document) { return [...ctx.querySelectorAll(sel)]; }
   });
 })();
 
+// ── How To Use Banner ────────────────────────────────────────
+const howToToggle = qs('#howToToggle');
+const howToBody   = qs('#howToBody');
+
+function openHowTo() {
+  howToBody.classList.remove('hidden');
+  howToToggle.setAttribute('aria-expanded', 'true');
+  howToToggle.querySelector('.how-to-chevron').style.transform = 'rotate(180deg)';
+}
+function closeHowTo() {
+  howToBody.classList.add('hidden');
+  howToToggle.setAttribute('aria-expanded', 'false');
+  howToToggle.querySelector('.how-to-chevron').style.transform = '';
+}
+
+howToToggle.addEventListener('click', () => {
+  howToBody.classList.contains('hidden') ? openHowTo() : closeHowTo();
+});
+
+// Auto-open on first load so students see directions immediately
+openHowTo();
+
 // ── Mode Navigation ────────────────────────────────────────────────
 const MODE_IDS = { flashcards: 'flashcardsMode', match: 'matchMode', quiz: 'quizMode', scenario: 'scenarioMode', extracredit: 'extracreditMode' };
 let currentMode = 'flashcards';
